@@ -1,0 +1,12 @@
+var:
+the variables can be declared global or local scope.
+This is mostly not used to avoid confusion.
+
+let:
+The variables are declared only in a particular block of code( {....} )
+, whenevr multiple people working on one project there might be chances that
+same variable name maybe used and it mught create problems during debugging.
+
+const:
+The constants values which wont be changed at any point in the program.
+So declaring a variable using 'const' the value wont change.
