@@ -1,61 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>assignment2</title>
+        <title>
+            Assignment2
+        </title>
     </head>
     <body>
-        <h1>Day 2 - Assignment 2</h1>
-        <h4>Remaining methods of string and arrary</h4>
-        <h5>these are some of the methods that sir didnt teach</h5>
-        <h5>1. searching a string<br>
-            2.slicing of string<br>
-            3.trim of stringd<br>
-            4. extracting string characters<br>
-            5. unicode of specified characters<br>
-
-        </h5>
+        <h1>To print sentence "the os name is android and version is 9"</h1>
         <script>
-            //searching for a string
-            let str="this is letsupgrade javascript";
-            let pos=str.search("letsupgrade");
-            console.log(pos);
-            //slicing of string
-            let stri="apple, banana ,kiwi";
-            var res= stri.slice(7,13);
-            console.log(res);
-            //TRIM to remove white spaces
-            let name="      hello       ";
-            console.log(name);
-            console.log(name.trim());
-            //extracting string characters
-            let name1="hello world";
-            console.log(name1.charAt(4));
-            //to return the unicode of a string
-            let name2="hello world";
-            console.log(name2.charCodeAt(4));
-            </script>
-        <h4>These are functions of array</h4>
-        <h5>1. join method<br>
-        2. deleting elemnts<br>
-        3. splicing of string<br>
-        4.Automatic toString<br>
-    </h5>
-        <script>
-            //Join method
-            let fruits=["banana","orange","apple","mangao"];
-            console.log(fruits.join("*"));
-
-            //deleting elements
-            let fruit=["banana","orange","apple","mangao"];
-            console.log(delete fruit[1]);
-
-            //splicing of string
-            let fru=["banana","orange","apple","mangao"];
-            console.log(fru.splice(2,0,"lemon","kiwi"));
-
-            //automatic toString
-            let veg=["banana","orange","apple","mangao"];
-            console.log(veg.toString());
-        </script>   
+            let name = prompt("enter the os name and version ");
+            let len = name.length;
+            console.log("input:", name);
+            let name1= name.slice(0, len-1);
+            let name2 = name.slice(len-2, len);
+            console.log(`Output : The os name is ${name1} and version is ${name2}`);
+        </script>
+        
     </body>
 </html>
