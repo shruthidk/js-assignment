@@ -1,27 +1,47 @@
-<!DOCTYPE html>
+<!DOCTYPE html>>
 <html>
     <head>
-        <title>assignment3</title>
+        <title>
+            Assignment3
+        </title>
     </head>
     <body>
-        <h1>the data types in java scripts</h1>
+        <h1>
+            Print the respective grade for the given marks
+        </h1>
+        <h2>Usinf condition if and if lse.</h2>
         <script>
-            //number data type
-            let num=123;
-            alert(1/0);
-            //string data types
-            let str="hello"
-            document.write(str);
-            //boolean data type
-            let isGreater=4>1;
-            document.write(    isGreater);
-            //null data type
-            //It’s just a special value which represents “nothing”, “empty” or “value unknown”.
-            let age=null;
-            //undefined datatype
-            let value;
-            document.write(value);
-
+            let marks=prompt("enter the marks otained:", "marks");
+            if (marks<50)
+            {
+                console.log(`Marks are ${marks} and grade is C`);
+            }
+            if (marks==50) {
+                console.log(`Marks are ${marks} and grade is B`);
+                
+            } else {
+                console.log(`Marks are ${marks} and grade is A`);
+            }
+        </script>
+        <h2>Using switch case</h2>
+        <script>
+                switch (marks) {
+                    case (marks<50):console.log(`Marks are ${marks} and grade is C`);
+                        
+                        break;
+                    case (marks==50):console.log(`Marks are ${marks} and grade is B`);
+                        
+                        break;
+                    case (marks>50):console.log(`Marks are ${marks} and grade is A`);
+                        
+                        break;
+                    default: console.log("enter valid marks")
+                        break;
+                }
+        </script>
+        <h2>Using ternary operator</h2>
+        <script>
+            console.log(marks ==50 ? `Marks are ${marks} and grade is B` : `Marks are ${marks} and grade is a`);
         </script>
     </body>
 </html>
