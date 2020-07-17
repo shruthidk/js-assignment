@@ -2,15 +2,27 @@
 <html>
     <head>
         <title>
-            assignment1
+            Assignment1
         </title>
     </head>
     <body>
-        <h1>Day 2- Assignment2</h1>
-        <h3>to get input from user and logs it into the page</h3>
+        <h1>Creating a function to check a no is odd or even</h1>
         <script>
-            let name =prompt('what is your name');
-            alert(`you are ${name} welcome!..`);
+            
+            function oddeven(num)
+            {
+                if (num%2==0)
+                {
+                    console.log(`The number entered is ${num} and Number is even`);
+                }
+                else{
+                    console.log(`The number entered is ${num} and Number is odd`);
+                }
+
+            }
+            let num=prompt('what is your name');
+            oddeven(num);
         </script>
+
     </body>
 </html>
