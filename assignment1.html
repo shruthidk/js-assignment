@@ -6,23 +6,31 @@
         </title>
     </head>
     <body>
-        <h1>Creating a function to check a no is odd or even</h1>
+        <h1>FIZZBUZZ question</h1>
         <script>
-            
-            function oddeven(num)
+            for(let i=1;i<=100;i++)
             {
-                if (num%2==0)
-                {
-                    console.log(`The number entered is ${num} and Number is even`);
-                }
-                else{
-                    console.log(`The number entered is ${num} and Number is odd`);
-                }
+            if(i%3==0 && i%5!=0)
+            {
+                document.write("fizz\n");
+            }
+            else if(i%3!=0 && i%5==0)
+            {
+                document.write("buzz\n");
 
             }
-            let num=prompt('what is your name');
-            oddeven(num);
-        </script>
+            else if(i%3==0 && i%5==0)
+            {
+                document.write("fizzbuzz\n");
 
+            }
+            
+            else {
+                document.write(i+"\n");
+            }
+
+            
+        }
+        </script>
     </body>
 </html>
