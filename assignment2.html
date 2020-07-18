@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            Assignment2
-        </title>
+        <title>Assignment2</title>
     </head>
     <body>
-        <h1>To print sentence "the os name is android and version is 9"</h1>
+        <h1> Destructuring the given object</h1>
         <script>
-            let name = prompt("enter the os name and version ");
-            let len = name.length;
-            console.log("input:", name);
-            let name1= name.slice(0, len-1);
-            let name2 = name.slice(len-2, len);
-            console.log(`Output : The os name is ${name1} and version is ${name2}`);
+            const student = {
+                name: "Helsinki" ,
+                age:24 ,
+                projects:{dicename :"Two players game using javascripts"}
+            }
+            let {name,age,projects:{dicename}}=student;
+            console.log(name,age,dicename);
         </script>
-        
     </body>
 </html>
